@@ -10,6 +10,11 @@
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 			crossorigin="anonymous"
 		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
 	</head>
 	<body>
 		<header>
@@ -52,16 +57,16 @@
 						<svg class="bi pe-none me-2" width="40" height="32">
 							<use xlink:href="#bootstrap"></use>
 						</svg>
-						<span class="fs-4">Sidebar</span>
+						<span class="fs-4">Bootstrap Dashboard</span>
 					</a>
-					<hr />
+					<hr class="text-white" />
 					<ul class="nav nav-pills flex-column mb-auto">
 						<li class="nav-item">
-							<a href="#" class="nav-link active" aria-current="page">
+							<a href="#" class="nav-link text-white" aria-current="page">
 								<svg class="bi pe-none me-2" width="16" height="16">
 									<use xlink:href="#home"></use>
 								</svg>
-								Home
+								<i class="fa-solid fa-house"></i> <span class="ms-2">Dashboard</span>
 							</a>
 						</li>
 						<li>
@@ -69,15 +74,15 @@
 								<svg class="bi pe-none me-2" width="16" height="16">
 									<use xlink:href="#speedometer2"></use>
 								</svg>
-								Dashboard
+								<i class="fa-solid fa-chart-line"></i> <span class="ms-2">Sponsorizzazione</span>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="nav-link text-white">
+							<a href="#" class="nav-link text-white active">
 								<svg class="bi pe-none me-2" width="16" height="16">
 									<use xlink:href="#table"></use>
 								</svg>
-								Orders
+								<i class="fa-solid fa-box-archive"></i> <span class="ms-2">Prodotti</span>
 							</a>
 						</li>
 						<li>
@@ -85,7 +90,7 @@
 								<svg class="bi pe-none me-2" width="16" height="16">
 									<use xlink:href="#grid"></use>
 								</svg>
-								Products
+								+ Nuovo progetto
 							</a>
 						</li>
 						<li>
@@ -93,7 +98,7 @@
 								<svg class="bi pe-none me-2" width="16" height="16">
 									<use xlink:href="#people-circle"></use>
 								</svg>
-								Customers
+								<i class="fa-solid fa-user-tie"></i> <span class="ms-2"> clienti</span>
 							</a>
 						</li>
 					</ul>
@@ -117,9 +122,9 @@
 						<ul class="dropdown-menu dropdown-menu-dark text-small shadow">
 							<li><a class="dropdown-item" href="#">New project...</a></li>
 							<li><a class="dropdown-item" href="#">Settings</a></li>
-							<li><a class="dropdown-item" href="#">Profile</a></li>
+
 							<li><hr class="dropdown-divider" /></li>
-							<li><a class="dropdown-item" href="#">Sign out</a></li>
+							<li><a class="dropdown-item" href="#">Esci</a></li>
 						</ul>
 					</div>
 				</div>
@@ -147,7 +152,7 @@
 									<tr>
 										<th scope="col">nome</th>
 										<th scope="col"></th>
-										<th class="d-none d-md-block d-lg-block" scope="col">prezzo</th>
+										<th class="d-none d-md-table-cell d-lg-table-cell" scope="col">prezzo</th>
 										<th scope="col">azioni</th>
 									</tr>
 								</thead>
@@ -155,58 +160,246 @@
 									<tr>
 										<th scope="row">1</th>
 										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-block d-lg-block">Otto</td>
-										<td>@mdo</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell">
+											<span>120 &euro;</span>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-primary fs-6"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-pen"></i>
+											</button>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-danger"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-trash-can"></i>
+											</button>
+										</td>
 									</tr>
 									<tr>
 										<th scope="row">2</th>
 										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-block d-lg-block">Otto</td>
-										<td>@mdo</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell">
+											<span>120 &euro;</span>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-primary"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-pen"></i>
+											</button>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-danger"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-trash-can"></i>
+											</button>
+										</td>
 									</tr>
 									<tr>
 										<th scope="row">3</th>
 										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-block d-lg-block">Otto</td>
-										<td>@mdo</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell">
+											<span>120 &euro;</span>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-primary"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-pen"></i>
+											</button>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-danger"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-trash-can"></i>
+											</button>
+										</td>
 									</tr>
 									<tr>
 										<th scope="row">4</th>
 										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-block d-lg-block">Otto</td>
-										<td>@mdo</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell">
+											<span>120 &euro;</span>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-primary"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-pen"></i>
+											</button>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-danger"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-trash-can"></i>
+											</button>
+										</td>
 									</tr>
 									<tr>
 										<th scope="row">5</th>
 										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-block d-lg-block">Otto</td>
-										<td>@mdo</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell">
+											<span>120 &euro;</span>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-primary"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-pen"></i>
+											</button>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-danger"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-trash-can"></i>
+											</button>
+										</td>
 									</tr>
 									<tr>
 										<th scope="row">6</th>
 										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-block d-lg-block">Otto</td>
-										<td>@mdo</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell">
+											<span>120 &euro;</span>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-primary"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-pen"></i>
+											</button>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-danger"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-trash-can"></i>
+											</button>
+										</td>
 									</tr>
 									<tr>
 										<th scope="row">7</th>
 										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-block d-lg-block">Otto</td>
-										<td>@mdo</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell">
+											<span>120 &euro;</span>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-primary"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-pen"></i>
+											</button>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-danger"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-trash-can"></i>
+											</button>
+										</td>
 									</tr>
 									<tr>
 										<th scope="row">8</th>
 										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-block d-lg-block">Otto</td>
-										<td>@mdo</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell">
+											<span>120 &euro;</span>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-primary"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-pen"></i>
+											</button>
+										</td>
+										<td>
+											<button
+												type="button"
+												class="btn btn-outline-danger"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												<i class="fa-solid fa-trash-can"></i>
+											</button>
+										</td>
 									</tr>
-									
 								</tbody>
 							</table>
 						</div>
 					</div>
 				</main>
 				<!-- /Main -->
+			</div>
+		</div>
+		<div
+			class="modal fade"
+			id="staticBackdrop"
+			tabindex="-1"
+			aria-labelledby="staticBackdropLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">patate</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
 			</div>
 		</div>
 
