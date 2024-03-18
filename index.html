@@ -35,7 +35,7 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						Menu
+						<i class="fa-solid fa-bars"></i>
 					</button>
 					<!-- /Hamburger button -->
 				</div>
@@ -70,7 +70,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#" class="nav-link text-white">
+							<a href="/sponsorizzazione.html" class="nav-link text-white">
 								<svg class="bi pe-none me-2" width="16" height="16">
 									<use xlink:href="#speedometer2"></use>
 								</svg>
@@ -78,7 +78,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#" class="nav-link text-white active">
+							<a href="/index.html" class="nav-link text-white active">
 								<svg class="bi pe-none me-2" width="16" height="16">
 									<use xlink:href="#table"></use>
 								</svg>
@@ -86,11 +86,11 @@
 							</a>
 						</li>
 						<li>
-							<a href="#" class="nav-link text-white">
+							<a href="/nuovo-prodotto.html" class="nav-link text-white">
 								<svg class="bi pe-none me-2" width="16" height="16">
 									<use xlink:href="#grid"></use>
 								</svg>
-								+ Nuovo progetto
+								+ Nuovo prodotto
 							</a>
 						</li>
 						<li>
@@ -120,8 +120,8 @@
 							<strong>mdo</strong>
 						</a>
 						<ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-							<li><a class="dropdown-item" href="#">New project...</a></li>
-							<li><a class="dropdown-item" href="#">Settings</a></li>
+							<li><a class="dropdown-item" href="#">Impostazioni </a></li>
+							<li><a class="dropdown-item" href="#">Profilo</a></li>
 
 							<li><hr class="dropdown-divider" /></li>
 							<li><a class="dropdown-item" href="#">Esci</a></li>
@@ -130,15 +130,15 @@
 				</div>
 
 				<!-- Main -->
-				<main class="col-md-8 col-lg-9">
+				<main class="col-md-8 col-lg-9 vh-100 overflow-y-auto">
 					<div class="container mt-4">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-between align-items-center">
 								<h1 class="m-0">10 prodotti trovati</h1>
 								<div class="btn-group" role="group" aria-label="Basic outlined example">
 									<div class="btn-group" role="group" aria-label="Default button group">
-										<button type="button" class="btn btn-outline-secondary">Left</button>
-										<button type="button" class="btn btn-outline-secondary">Right</button>
+										<button type="button" class="btn btn-outline-secondary">Esporta</button>
+										<button type="button" class="btn btn-outline-secondary">Nuovo</button>
 									</div>
 								</div>
 							</div>
@@ -150,20 +150,38 @@
 							<table class="table">
 								<thead>
 									<tr>
-										<th scope="col">nome</th>
-										<th scope="col"></th>
-										<th class="d-none d-md-table-cell d-lg-table-cell" scope="col">prezzo</th>
-										<th scope="col">azioni</th>
+										<th scope="col" colspan="2">Nome</th>
+										<th class="d-none d-md-table-cell d-lg-table-cell text-center" scope="col">
+											Prezzo
+										</th>
+										<th class="d-none d-lg-block text-center" scope="col">Stato</th>
+										<th scope="col" class="text-center">Azioni</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<th scope="row">1</th>
-										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-table-cell d-lg-table-cell">
-											<span>120 &euro;</span>
+										<td>
+											<img
+												class="object-fit-cover"
+												src="./img/cellulare.jpeg"
+												alt=""
+												width="50px"
+												height="50px"
+											/>
 										</td>
 										<td>
+											<p class="m-0">Smartphone Samsung galaxy s 21</p>
+											<small class="text-secondary">Display AMOLED. Fotocamera Ultra Wide, Batteria a lunga durata</small>
+										</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+											<span>120 &euro;</span>
+										</td>
+										<td class="d-none d-lg-table-cell text-center">
+											<i
+												class="fa-solid fa-check border-success text-success border rounded-circle p-1"
+											></i>
+										</td>
+										<td class="text-center">
 											<button
 												type="button"
 												class="btn btn-outline-primary fs-6"
@@ -172,8 +190,7 @@
 											>
 												<i class="fa-solid fa-pen"></i>
 											</button>
-										</td>
-										<td>
+
 											<button
 												type="button"
 												class="btn btn-outline-danger"
@@ -185,22 +202,37 @@
 										</td>
 									</tr>
 									<tr>
-										<th scope="row">2</th>
-										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-table-cell d-lg-table-cell">
-											<span>120 &euro;</span>
+										<td>
+											<img
+												class="object-fit-cover"
+												src="./img/cellulare.jpeg"
+												alt=""
+												width="50px"
+												height="50px"
+											/>
 										</td>
 										<td>
+											<p class="m-0">Smartphone Samsung galaxy s 21</p>
+											<small class="text-secondary">Display AMOLED. Fotocamera Ultra Wide, Batteria a lunga durata</small>
+										</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+											<span>120 &euro;</span>
+										</td>
+										<td class="d-none d-lg-table-cell text-center">
+											<i
+												class="fa-solid fa-check border-success text-success border rounded-circle p-1"
+											></i>
+										</td>
+										<td class="text-center">
 											<button
 												type="button"
-												class="btn btn-outline-primary"
+												class="btn btn-outline-primary fs-6"
 												data-bs-toggle="modal"
 												data-bs-target="#staticBackdrop"
 											>
 												<i class="fa-solid fa-pen"></i>
 											</button>
-										</td>
-										<td>
+
 											<button
 												type="button"
 												class="btn btn-outline-danger"
@@ -212,22 +244,37 @@
 										</td>
 									</tr>
 									<tr>
-										<th scope="row">3</th>
-										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-table-cell d-lg-table-cell">
-											<span>120 &euro;</span>
+										<td>
+											<img
+												class="object-fit-cover"
+												src="./img/cellulare.jpeg"
+												alt=""
+												width="50px"
+												height="50px"
+											/>
 										</td>
 										<td>
+											<p class="m-0">Smartphone Samsung galaxy s 21</p>
+											<small class="text-secondary">Display AMOLED. Fotocamera Ultra Wide, Batteria a lunga durata</small>
+										</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+											<span>120 &euro;</span>
+										</td>
+										<td class="d-none d-lg-table-cell text-center">
+											<i
+												class="fa-solid fa-check border-success text-success border rounded-circle p-1"
+											></i>
+										</td>
+										<td class="text-center">
 											<button
 												type="button"
-												class="btn btn-outline-primary"
+												class="btn btn-outline-primary fs-6"
 												data-bs-toggle="modal"
 												data-bs-target="#staticBackdrop"
 											>
 												<i class="fa-solid fa-pen"></i>
 											</button>
-										</td>
-										<td>
+
 											<button
 												type="button"
 												class="btn btn-outline-danger"
@@ -239,22 +286,37 @@
 										</td>
 									</tr>
 									<tr>
-										<th scope="row">4</th>
-										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-table-cell d-lg-table-cell">
-											<span>120 &euro;</span>
+										<td>
+											<img
+												class="object-fit-cover"
+												src="./img/cellulare.jpeg"
+												alt=""
+												width="50px"
+												height="50px"
+											/>
 										</td>
 										<td>
+											<p class="m-0">Smartphone Samsung galaxy s 21</p>
+											<small class="text-secondary">Display AMOLED. Fotocamera Ultra Wide, Batteria a lunga durata</small>
+										</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+											<span>120 &euro;</span>
+										</td>
+										<td class="d-none d-lg-table-cell text-center">
+											<i
+												class="fa-solid fa-check border-success text-success border rounded-circle p-1"
+											></i>
+										</td>
+										<td class="text-center">
 											<button
 												type="button"
-												class="btn btn-outline-primary"
+												class="btn btn-outline-primary fs-6"
 												data-bs-toggle="modal"
 												data-bs-target="#staticBackdrop"
 											>
 												<i class="fa-solid fa-pen"></i>
 											</button>
-										</td>
-										<td>
+
 											<button
 												type="button"
 												class="btn btn-outline-danger"
@@ -266,22 +328,37 @@
 										</td>
 									</tr>
 									<tr>
-										<th scope="row">5</th>
-										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-table-cell d-lg-table-cell">
-											<span>120 &euro;</span>
+										<td>
+											<img
+												class="object-fit-cover"
+												src="./img/cellulare.jpeg"
+												alt=""
+												width="50px"
+												height="50px"
+											/>
 										</td>
 										<td>
+											<p class="m-0">Smartphone Samsung galaxy s 21</p>
+											<small class="text-secondary">Display AMOLED. Fotocamera Ultra Wide, Batteria a lunga durata</small>
+										</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+											<span>120 &euro;</span>
+										</td>
+										<td class="d-none d-lg-table-cell text-center">
+											<i
+												class="fa-solid fa-check border-success text-success border rounded-circle p-1"
+											></i>
+										</td>
+										<td class="text-center">
 											<button
 												type="button"
-												class="btn btn-outline-primary"
+												class="btn btn-outline-primary fs-6"
 												data-bs-toggle="modal"
 												data-bs-target="#staticBackdrop"
 											>
 												<i class="fa-solid fa-pen"></i>
 											</button>
-										</td>
-										<td>
+
 											<button
 												type="button"
 												class="btn btn-outline-danger"
@@ -293,22 +370,37 @@
 										</td>
 									</tr>
 									<tr>
-										<th scope="row">6</th>
-										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-table-cell d-lg-table-cell">
-											<span>120 &euro;</span>
+										<td>
+											<img
+												class="object-fit-cover"
+												src="./img/cellulare.jpeg"
+												alt=""
+												width="50px"
+												height="50px"
+											/>
 										</td>
 										<td>
+											<p class="m-0">Smartphone Samsung galaxy s 21</p>
+											<small class="text-secondary">Display AMOLED. Fotocamera Ultra Wide, Batteria a lunga durata</small>
+										</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+											<span>120 &euro;</span>
+										</td>
+										<td class="d-none d-lg-table-cell text-center">
+											<i
+												class="fa-solid fa-check border-success text-success border rounded-circle p-1"
+											></i>
+										</td>
+										<td class="text-center">
 											<button
 												type="button"
-												class="btn btn-outline-primary"
+												class="btn btn-outline-primary fs-6"
 												data-bs-toggle="modal"
 												data-bs-target="#staticBackdrop"
 											>
 												<i class="fa-solid fa-pen"></i>
 											</button>
-										</td>
-										<td>
+
 											<button
 												type="button"
 												class="btn btn-outline-danger"
@@ -320,22 +412,37 @@
 										</td>
 									</tr>
 									<tr>
-										<th scope="row">7</th>
-										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-table-cell d-lg-table-cell">
-											<span>120 &euro;</span>
+										<td>
+											<img
+												class="object-fit-cover"
+												src="./img/cellulare.jpeg"
+												alt=""
+												width="50px"
+												height="50px"
+											/>
 										</td>
 										<td>
+											<p class="m-0">Smartphone Samsung galaxy s 21</p>
+											<small class="text-secondary">Display AMOLED. Fotocamera Ultra Wide, Batteria a lunga durata</small>
+										</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+											<span>120 &euro;</span>
+										</td>
+										<td class="d-none d-lg-table-cell text-center">
+											<i
+												class="fa-solid fa-check border-success text-success border rounded-circle p-1"
+											></i>
+										</td>
+										<td class="text-center">
 											<button
 												type="button"
-												class="btn btn-outline-primary"
+												class="btn btn-outline-primary fs-6"
 												data-bs-toggle="modal"
 												data-bs-target="#staticBackdrop"
 											>
 												<i class="fa-solid fa-pen"></i>
 											</button>
-										</td>
-										<td>
+
 											<button
 												type="button"
 												class="btn btn-outline-danger"
@@ -347,22 +454,37 @@
 										</td>
 									</tr>
 									<tr>
-										<th scope="row">8</th>
-										<td>Smartphone Samsung galaxy s 21</td>
-										<td class="d-none d-md-table-cell d-lg-table-cell">
-											<span>120 &euro;</span>
+										<td>
+											<img
+												class="object-fit-cover"
+												src="./img/cellulare.jpeg"
+												alt=""
+												width="50px"
+												height="50px"
+											/>
 										</td>
 										<td>
+											<p class="m-0">Smartphone Samsung galaxy s 21</p>
+											<small class="text-secondary">Display AMOLED. Fotocamera Ultra Wide, Batteria a lunga durata</small>
+										</td>
+										<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+											<span>120 &euro;</span>
+										</td>
+										<td class="d-none d-lg-table-cell text-center">
+											<i
+												class="fa-solid fa-check border-success text-success border rounded-circle p-1"
+											></i>
+										</td>
+										<td class="text-center">
 											<button
 												type="button"
-												class="btn btn-outline-primary"
+												class="btn btn-outline-primary fs-6"
 												data-bs-toggle="modal"
 												data-bs-target="#staticBackdrop"
 											>
 												<i class="fa-solid fa-pen"></i>
 											</button>
-										</td>
-										<td>
+
 											<button
 												type="button"
 												class="btn btn-outline-danger"
